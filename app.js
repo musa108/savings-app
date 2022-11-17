@@ -99,10 +99,12 @@ const btn_one = document.getElementById("btn-one");
 const result = document.getElementById("result");
 const members = document.getElementById("members")
 btn_one.addEventListener("click", () =>{
-//   console.log(result.innerText);
-//     `<div>${result.innerText}</div>`
 members.innerHTML = result.innerHTML 
 });
+const withdraw = document.getElementById("withdraw");
+withdraw.addEventListener("click", () =>{
+    members.innerText= "";
+})
 
 
 
