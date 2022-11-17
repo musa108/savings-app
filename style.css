@@ -83,21 +83,41 @@ label{
     color: rgb(10, 247, 105);
     font-weight: 400;
 }
-.btns{
-    display: flex;
-   justify-content: space-around;
-    align-items: center;
+#withdraw {
+    width: 120px;
+    height: 35px; 
+    border-radius: 8px;
+    border: 0.2px solid rgb(210, 1, 1);
+    background:rgb(210, 1, 1);
+    color:rgb(232, 217, 217);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px; 
+    cursor: pointer;
+    margin-bottom: 10px 
 }
-#btn-one, #btn-two, #btn-three {
-    width: 100px;
+.btns{
+   margin-left: 10px;
+}
+#btn-one {
+    width: 250px;
     height: 35px; 
     border-radius: 8px;
     border: 0.2px solid rgb(45, 3, 184);
     background: rgb(45, 3, 184);
     color:rgb(10, 247, 105);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 10px; 
     cursor: pointer;
     margin-bottom: 10px;
+}
+#btn-one:hover{
+    color: rgb(45, 3, 184);
+    background: rgb(10, 247, 105);
+}
+#members{
+    display: block;
+    color:rgb(45, 3, 184);
+    margin-left: 10px;
 }

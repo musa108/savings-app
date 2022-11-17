@@ -17,13 +17,8 @@ tiers.addEventListener('change',function ()
     let output_tier = document.getElementById("result-tier");
     let input_amount = document.getElementById("amount");
     let output_amount = document.getElementById("result-amount");
-    let amount_info = document.getElementById("amount-info");
-      input_amount.addEventListener("keyup", () =>{
-        if (input_amount.length > 1000) {
-            amount_info.innerText = "cant be more than 10000"
-
-        }
-      })
+    let amount_info = document.getElementById("amount-info");  
+    input_amount.length > 10000? amount_info.innerHTML = "hey": "";
  
      output_name.innerHTML = 
      `<div>Student Name: <span>${Name.value}</span></div>`;
@@ -32,11 +27,11 @@ tiers.addEventListener('change',function ()
      output_amount.innerHTML = 
      `<div>Amount Saved: <span>N${input_amount.value}</span></div>`;
     document.getElementById("total").innerHTML=
-    `<div>Total amount: <span>N${amount.toFixed(2)}</span></div>`;
-    
+    `<div>Total amount: <span>N${amount.toFixed(2)}</span></div>`; 
     };
     window.addEventListener("load",calculate);
 btn.addEventListener("click", calculate);
+
  } else if(tiers.value == "Tier 2") {
     tier_info.innerText = "10% interest per week";
 
@@ -100,6 +95,14 @@ else{
     tier_info.innerText = "";
 }
 },false);
+const btn_one = document.getElementById("btn-one");
+const result = document.getElementById("result");
+const members = document.getElementById("members")
+btn_one.addEventListener("click", () =>{
+//   console.log(result.innerText);
+//     `<div>${result.innerText}</div>`
+members.innerHTML = result.innerHTML 
+});
 
 
 

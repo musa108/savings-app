@@ -32,7 +32,7 @@
             <label  for="amount">Amount(N):</label> <br>
             <input type="number"
             placeholder="Amount"
-            m="5"
+            maxlength="5"
             id="amount"
             >
             <p id="amount-info"></p>
@@ -46,13 +46,13 @@
            <p id="result-amount">Amount:</p>
            <p id="result-tier"></p>
            <p id="total"></p>
+           <button id="withdraw"> withdraw</button>
         </div>
         <div class="btns">
-            <button id="btn-one">Tier one </button>
-            <button id="btn-two">Tier two  </button>
-            <button id="btn-three">Tier three </button>
+            <button id="btn-one">Total Members </button>
          </div>
-     </div>
+         <div id="members"></div>
+     </div>    
     </div>
  <script src="./app.js"></script>   
 </body>
