@@ -18,11 +18,10 @@ tiers.addEventListener('change',function ()
     let input_amount = document.getElementById("amount");
     let output_amount = document.getElementById("result-amount");
     let amount_info = document.getElementById("amount-info");
-      input_amount.addEventListener("input", () =>{
-        if (input_amount.value.lenght > 100) {
-            alert("nan")
-        } else {
-            
+      input_amount.addEventListener("keyup", () =>{
+        if (input_amount.length > 1000) {
+            amount_info.innerText = "cant be more than 10000"
+
         }
       })
  
