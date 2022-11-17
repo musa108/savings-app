@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>student saving app</title>
+</head>
+<body>
+    <div class="container">
+     <div class="content">
+        <!-- header section -->
+        <div class="header">
+            <h3 class="header-text">Savings App</h3>
+        </div>
+       <!-- form section -->
+        <form action="">
+            <label id="text" for="text">Student Name</label> <br>
+            <input type="text"
+            placeholder="Full Name"
+            id="name"
+            > <br>
+            <label for="tiers">Select tier of your choice</label>
+            <select id="tiers" name="Tier">
+                <option value=""></option>
+               <option value="Tier 1" id="tier-one">Tier 1</option>
+               <option value="Tier 2" id="tier-two">Tier 2</option>
+               <option value="Tier 3" id="tier-three">Tier 3</option>
+            </select> <br>
+            <p id="tier-info"></p>
+            <label  for="amount">Amount(N):</label> <br>
+            <input type="number"
+            placeholder="Amount"
+            id="amount"
+            >
+            <div id="amount-info"></div>
+             <br>
+            <!-- calculate button -->
+            <button type="button" id="btn">Save</button>
+        </form>
+        <!-- output section -->
+        <div id="result">
+           <p id="result-name">Student Name:</p>
+           <p id="result-amount">Amount:</p>
+           <p id="result-tier"></p>
+           <p id="total"></p>
+        </div>
+        <div class="btns">
+            <button id="btn-one">Tier one </button>
+            <button id="btn-two">Tier two  </button>
+            <button id="btn-three">Tier three </button>
+         </div>
+     </div>
+    </div>
+ <script src="./app.js"></script>   
+</body>
+</html>

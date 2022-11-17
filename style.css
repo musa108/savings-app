@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(232, 217, 217);
+    font-family:'poppins', sans-serif ;
+}
+.container{
+    background: rgb(24, 24, 25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 375px;
+    box-shadow: 2px 3px 2px 2px  rgb(94, 87, 87);
+    border-radius: 5px;
+}
+.content{
+    display: block;
+}
+.header{
+    background: #fff;
+    padding: 10px;
+    width: 375px;
+    text-align: center;
+    border-radius: 5px 5px 0  0;
+}
+.header-text{
+    color:rgb(210, 1, 1);
+    
+}
+form{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+label{
+    color: #fff;
+}
+#name{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+#tiers, #amount {
+    width: 250px;
+    height: 35px; 
+}
+
+#tier-info,#amount-info{
+    color: rgb(45, 3, 184);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#btn{
+    width: 250px;
+    height: 40px; 
+    border-radius: 8px;
+    border: 0.2px solid rgb(10, 247, 105);
+    background: rgb(10, 247, 105);
+    color:rgb(26, 23, 23);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btn:hover{
+    background: rgb(26, 23, 23);
+    color: rgb(10, 247, 105);
+}
+#result{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+#result-name{
+    text-transform: capitalize;
+}
+#result-amount, #result-name, #result-tier, #total{
+    color: rgb(10, 247, 105);
+    font-weight: 400;
+}
+.btns{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+}
+#btn-one, #btn-two, #btn-three {
+    width: 100px;
+    height: 35px; 
+    border-radius: 8px;
+    border: 0.2px solid rgb(45, 3, 184);
+    background: rgb(45, 3, 184);
+    color:rgb(10, 247, 105);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px; 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
